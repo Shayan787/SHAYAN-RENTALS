@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Shayan Rentals</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo" />
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="available-cars.html">Available Cars</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+    </div>
+        <img src="menuicon.png" class="menu" id="menu">
+
+    <img src="headerbackground.avif" class="headerbackground" alt="">
+    <div class="headertext">
+      <h1>Contact Us</h1>
+      <h2>We’re here to help — get in touch anytime</h2>
+    </div>
+  </header>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-title">
+        <h1>Get in Touch</h1>
+        <p>Have questions or need a quote? We’d love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form>
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Phone Number" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <ul>
+            <li>📍 <strong>Address:</strong> Matiari, Sindh, Pakistan</li>
+            <li>📞 <strong>Phone:</strong> +92 304 3211847</li>
+            <li>✉️ <strong>Email:</strong> info@ShayanRentals.pk</li>
+            <li>🕒 <strong>Hours:</strong> Open 24/7</li>
+          </ul>
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps?q=Matiari,Sindh,Pakistan&output=embed"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Shayan Rentals</h3>
+        <p>Your trusted partner for car rentals across Pakistan.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="available-cars.html">Available Cars</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>📞 +92 300 1234567</li>
+          <li>✉️ info@ShayanRentals.pk</li>
+          <li>📍 Matiari, Sindh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ShayanRentals.pk — All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  var menuIcon = document.querySelector(".menu");
+  var navMenu = document.querySelector(".nav-menu");
+
+  menuIcon.onclick = function() {
+    if (navMenu.style.display === "block") {
+      navMenu.style.display = "none";
+    } else {
+      navMenu.style.display = "block";
+    }
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Shayan Rentals</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo" />
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="available-cars.html">Available Cars</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <img src="menuicon.png" class="menu" id="menu">
+
+    <img src="headerbackground.avif" class="headerbackground" alt="">
+    <div class="headertext">
+      <h1>About Shayan Rentals</h1>
+      <h2>Reliable. Affordable. Always Here For You.</h2>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-title">
+        <h1>Who We Are</h1>
+        <p>Your trusted partner for car rentals across Pakistan.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="civic.jpg" alt="Car Image" />
+        </div>
+        <div class="about-content">
+          <h2>Welcome to Shayan Rentals</h2>
+          <p>
+            Shayan Rentals was founded with one goal — to make car rentals simple,
+            affordable, and accessible to everyone in Pakistan. Whether you’re
+            traveling for business, leisure, or family trips, we’ve got the perfect
+            vehicle for every journey.
+          </p>
+          <p>
+            From economy cars to luxury SUVs, our fleet is regularly maintained and
+            ready to go whenever you are. With 24/7 customer support and reliable
+            service across major cities, Shayan Rentals ensures a smooth and
+            comfortable travel experience every time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR MISSION SECTION ===== -->
+  <section class="mission-section">
+    <div class="container">
+      <div class="mission-content">
+        <h2>Our Mission</h2>
+        <p>
+          To provide top-quality, affordable car rental services while maintaining
+          the highest standards of reliability and customer satisfaction. We aim
+          to redefine transportation convenience across Pakistan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-title">
+        <h1>Why Choose Shayan Rentals?</h1>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>🚗 Wide Range of Cars</h3>
+          <p>From budget-friendly sedans to luxury 4x4s — we’ve got something for every journey.</p>
+        </div>
+        <div class="why-card">
+          <h3>💸 Affordable Pricing</h3>
+          <p>Competitive rates and transparent pricing with no hidden fees.</p>
+        </div>
+        <div class="why-card">
+          <h3>🕒 24/7 Support</h3>
+          <p>Our dedicated support team is always available to assist you.</p>
+        </div>
+        <div class="why-card">
+          <h3>🛠️ Well-Maintained Vehicles</h3>
+          <p>Every car is inspected regularly to ensure your safety and comfort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Shayan Rentals</h3>
+        <p>Your trusted partner for car rentals across Pakistan.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="available-cars.html">Available Cars</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>📞 +92 304 3211847</li>
+          <li>✉️ info@ShayanRentals.pk</li>
+          <li>📍 Matiari, Sindh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ShayanRentals.pk — All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  var menuIcon = document.querySelector(".menu");
+  var navMenu = document.querySelector(".nav-menu");
+
+  menuIcon.onclick = function() {
+    if (navMenu.style.display === "block") {
+      navMenu.style.display = "none";
+    } else {
+      navMenu.style.display = "block";
+    }
+  };
+</script>
+</body>
+</html>

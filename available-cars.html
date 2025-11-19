@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Available Cars | Shayan Rentals</title>
+  <link rel="stylesheet" href="available-cars.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Logo" />
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="available-cars.html">Rental Vehicles</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+    <img src="menuicon.png" class="menu" id="menu">
+    <div class="headertext">
+      <h1>Available Cars</h1>
+      <h2>Choose from our wide range of vehicles available for rent</h2>
+    </div>
+    <img src="headercarvideo.gif" class="headerimage" autoplay muted loop>
+  </header>
+
+  <!-- ===== AVAILABLE CARS SECTION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h1>Available Cars</h1>
+        <p>Find the perfect car for your next journey</p>
+      </div>
+
+      <div class="cars-grid">
+        <!-- Toyota Corolla -->
+        <div class="car-card">
+          <img src="coroalla.jpg" alt="Toyota Corolla" />
+          <h3>Toyota Corolla 2022</h3>
+          <p>Automatic | Petrol | 5 Seats</p>
+          <span>₨4,500 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Honda Civic -->
+        <div class="car-card">
+          <img src="civic.jpg" alt="Honda Civic" />
+          <h3>Honda Civic 2021</h3>
+          <p>Automatic | Petrol | 5 Seats</p>
+          <span>₨5,200 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Suzuki Alto -->
+        <div class="car-card">
+          <img src="alto.jpg" alt="Suzuki Alto" />
+          <h3>Suzuki Alto 2023</h3>
+          <p>Manual | Petrol | 4 Seats</p>
+          <span>₨2,800 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Toyota Hilux -->
+        <div class="car-card">
+          <img src="HiluxRevo.jpg" alt="Toyota Hilux" />
+          <h3>Toyota Hilux 2022</h3>
+          <p>Manual | Diesel | 5 Seats</p>
+          <span>₨7,500 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Toyota Land Cruiser -->
+        <div class="car-card">
+          <img src="landcruisor.jpg" alt="Toyota Land Cruiser" />
+          <h3>Toyota Land Cruiser 2023</h3>
+          <p>Automatic | Diesel | 7 Seats</p>
+          <span>₨15,000 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Toyota Fortuner -->
+        <div class="car-card">
+          <img src="fortuner.jpg" alt="Toyota Fortuner" />
+          <h3>Toyota Fortuner 2022</h3>
+          <p>Automatic | Diesel | 7 Seats</p>
+          <span>₨10,500 / Day</span>
+          <button>Book Now</button>
+        </div>
+
+        <!-- Lexus -->
+        <div class="car-card">
+          <img src="lexus570.jpg" alt="Lexus LX 570" />
+          <h3>Lexus LX 570 2023</h3>
+          <p>Automatic | Petrol | 7 Seats</p>
+          <span>₨18,000 / Day</span>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Shayan Rentals</h3>
+        <p>Your trusted partner for car rentals across Pakistan.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="available-cars.html">Rental Vehicles</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>📞 +92 304 3211847</li>
+          <li>✉️ info@ShayanRentals.pk</li>
+          <li>📍 Matiari, Sindh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 ShayanRentals.pk — All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  var menuIcon = document.querySelector(".menu");
+  var navMenu = document.querySelector(".nav-menu");
+
+  menuIcon.onclick = function() {
+    if (navMenu.style.display === "block") {
+      navMenu.style.display = "none";
+    } else {
+      navMenu.style.display = "block";
+    }
+  };
+</script>
+</body>
+</html>

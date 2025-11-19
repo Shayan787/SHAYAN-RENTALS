@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fb;
+    color: #222;
+}
+
+/* Navbar */
+header {
+    padding: 10px;
+    background: #111;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #2563eb;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffcc00;
+}
+.menu{
+    display: none;
+}
+
+/* Hero section */
+.hero {
+    background: url('headerbackground.avif') center/cover no-repeat;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background-color: #222; /* fallback */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Services section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 60px 10%;
+}
+
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.service-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.service-card p {
+    color: #333;
+}
+
+/* Why Choose Us */
+.why-choose {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.feature {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    color: #ffcc00;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        height: 30%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 64px;
+        right: 0.5cm;
+        padding: 10px;
+        z-index: 999;
+        transition: 1s;
+        
+    }
+    .nav-menu a{
+        display: flex;
+        margin-top: 11px;
+        transition: 1s;
+        
+    }
+    
+    .menu {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 0.5cm;
+        right: 0.5cm;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .nav-container .logo{
+        width: 60px;
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 999;
+    }
+}

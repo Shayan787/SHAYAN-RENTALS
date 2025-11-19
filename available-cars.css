@@ -1,0 +1,293 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 60px;
+}
+
+.logo img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #2563eb;
+}
+header{
+    height: 70vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.headertext {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.headertext h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.headertext h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.menu{
+  display: none;
+}
+.headerimage {
+  position: absolute;
+  top: 178px;
+  left: 0;
+  width: 450px;
+  animation: driveAcross 6s linear infinite;
+}
+
+@keyframes driveAcross {
+  0% {
+    left: -500px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+
+/* ===== SECTION ===== */
+.section {
+  padding: 3rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title h1 {
+  font-size: 2.2rem;
+  color: #111;
+}
+
+.section-title p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* ===== CARS GRID ===== */
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.car-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.car-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.car-card p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.car-card span {
+  display: block;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.car-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.car-card button:hover {
+  background: #1e4fc4;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  color: #9ca3af;
+}
+
+.footer-column a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1rem;
+  color: #9ca3af;
+}
+@media (max-width: 768px) {
+  .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu {
+
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        height: 30%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 64px;
+        right: 0.5cm;
+        padding: 10px;
+        z-index: 999;
+        transition: 1s;
+        
+    }
+    .nav-menu a{
+        display: flex;
+        margin-top: 11px;
+        transition: 1s;
+        
+    }
+    
+    .menu {
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 0.5cm;
+        right: 0.5cm;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .nav-container .logo{
+        width: 60px;
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 999;
+    }
+    .cars-grid{
+      display: flex;
+      flex-direction: column;
+    }
+    header{
+      height: 60vh;
+    }
+    .headerimage {
+  position: absolute;
+  top: 8cm;
+  left: 0;
+  width: 250px;
+  animation: driveAcross 6s linear infinite;
+}
+.headertext h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.headertext h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+    .footer-column{
+      font-size: 0.8rem;
+    }
+  }
