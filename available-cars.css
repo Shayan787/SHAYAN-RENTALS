@@ -69,7 +69,7 @@ header{
 }
 .headerimage {
   position: absolute;
-  top: 178px;
+  top: 12cm;
   left: 0;
   width: 450px;
   animation: driveAcross 6s linear infinite;
@@ -290,4 +290,5 @@ header{
     .footer-column{
       font-size: 0.8rem;
     }
+
   }
